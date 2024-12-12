@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root {
+    --textColor: rgb(191, 25, 224);
+    --font: 'Karla', sans-serif;
+}
+
+html {
+    /*FONT:*/   
+    font-family: var(--font);
+    color: var(--textColor);
+    font-size: 18px; 
+    font-weight: 400;
+
+    /*BACKGROUND:*/
+    background: url('/images/pinkbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    margin: 10px auto; /*auto - center the linktree*/
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%; /*round image*/
+}
+
+#userName {
+    font-weight: 700; /*bold*/
+    font-size: 1.5rem;
+}
+
+.solid{
+    border-top: 2px solid rgb(191, 25, 224);
+}
+
+#description {
+    margin: 20px auto;
+}
+
+main {
+    width: auto;
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+/*LINKS*/
+.links {
+    /*LINKS TEXT*/
+    color: var(--textColor);
+    text-decoration: none;
+    text-align: center;
+
+    /*LINKS BORDER:*/
+    border: 2px solid var(--textColor);
+    border-radius: 10px;
+
+    display: block; /*each link takes a whole line*/
+    margin: 10px;
+    padding: 10px; 
+}
+
+.links:hover{
+    background-color: rgb(191, 25, 224);
+    color: blanchedalmond;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    transition: transform 0.3s ease; /* Ajoute une transition fluide */
+
+}
+
+.social-icon_instagram, .social-icon_tiktok {
+    max-width: 80px; /* Taille maximale de l'image */
+    height: auto;     /* Ajuste la hauteur pour maintenir le ratio */
+}
+
+.social-icon_instagram:hover, .social-icon_tiktok:hover {
+    transform: scale(1.2); /* Grossit l'image à 120% lors du survol */
+    
+}
